@@ -1,0 +1,35 @@
+﻿name: Opdater stilling
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch: 
+    
+permissions:
+  contents: write
+  
+jobs:
+  opdater:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Byg programmet
+        run: dotnet build HentData
+
+      - name: Hent data
+        working-directory: HentData/bin/Debug/net10.0
+        run: dotnet HentData.dll
+
+      - name: Gem den nye fil
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add season-resultat.json
+          git commit -m "Opdater stilling" || echo "Ingen ændringer"
+          git push
