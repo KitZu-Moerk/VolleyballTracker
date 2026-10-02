@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w6u1nGJDxeU=",
+  "dgSpecHash": "Nz5CtBipGMo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker\\HentData\\HentData.csproj",
+  "projectFilePath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker_Class_Update\\HentData\\HentData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andreas Mørk\\.nuget\\packages\\htmlagilitypack\\1.13.0\\htmlagilitypack.1.13.0.nupkg.sha512"
   ],

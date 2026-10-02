@@ -25,6 +25,8 @@ jobs:
       - name: Hent data
         working-directory: HentData/bin/Debug/net10.0
         run: dotnet HentData.dll
+        env:
+          HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
 
       - name: Gem den nye fil
         run: |

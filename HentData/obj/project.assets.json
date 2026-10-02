@@ -75,11 +75,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker\\HentData\\HentData.csproj",
+      "projectUniqueName": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker_Class_Update\\HentData\\HentData.csproj",
       "projectName": "HentData",
-      "projectPath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker\\HentData\\HentData.csproj",
+      "projectPath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker_Class_Update\\HentData\\HentData.csproj",
       "packagesPath": "C:\\Users\\Andreas Mørk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker\\HentData\\obj\\",
+      "outputPath": "C:\\Users\\Andreas Mørk\\RiderProjects\\VolleyballTracker_Class_Update\\HentData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andreas Mørk\\AppData\\Roaming\\NuGet\\NuGet.Config"
