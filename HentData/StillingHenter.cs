@@ -28,13 +28,14 @@ public class StillingHenter
         foreach (var holdData in holdListe.EnumerateArray())
         {
             string hold = holdData.GetProperty("team").GetProperty("name").GetString();
+            string logo = holdData.GetProperty("team").GetProperty("logo").GetString();
             int point = holdData.GetProperty("points").GetInt32();
             int kampe = holdData.GetProperty("gamesPlayed").GetInt32();
             int vundne = holdData.GetProperty("wins").GetInt32();
             int tabte = holdData.GetProperty("loses").GetInt32();
             int sætVundet = holdData.GetProperty("scoredPoints").GetInt32();
             int sætTabt = holdData.GetProperty("receivedPoints").GetInt32();
-            stilling.Add(new { Hold = hold, Point = point, Kampe = kampe, Vundne = vundne, Tabte = tabte, SætVundet = sætVundet, SætTabt = sætTabt});
+            stilling.Add(new { Hold = hold, Logo = logo, Point = point, Kampe = kampe, Vundne = vundne, Tabte = tabte, SætVundet = sætVundet, SætTabt = sætTabt});
             
         }
         return stilling;
