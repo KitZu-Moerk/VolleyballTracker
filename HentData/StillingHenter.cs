@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using HtmlAgilityPack;
 
 
 public class StillingHenter
@@ -22,6 +21,7 @@ public class StillingHenter
         string svar = await client.GetStringAsync(url);
         
         JsonDocument doc = JsonDocument.Parse(svar);
+        
         var holdListe = doc.RootElement.GetProperty("groups")[0].GetProperty("standings");
         var stilling = new List<object>();
 
