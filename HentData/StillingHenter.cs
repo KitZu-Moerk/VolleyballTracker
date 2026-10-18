@@ -19,7 +19,12 @@ public class StillingHenter
     {
         string url = $"https://volleyball.highlightly.net/standings?leagueId={leagueId}&season={season}";
         string svar = await client.GetStringAsync(url);
-        
+
+        return LæsStilling(svar);
+    }
+
+    public List<object> LæsStilling(string svar)
+    {
         JsonDocument doc = JsonDocument.Parse(svar);
         
         var holdListe = doc.RootElement.GetProperty("groups")[0].GetProperty("standings");
@@ -41,7 +46,8 @@ public class StillingHenter
         return stilling;
     }
 
-    public void GemSomJson(List<object> stilling, string filnavn)
+
+public void GemSomJson(List<object> stilling, string filnavn)
     {
         string json = JsonSerializer.Serialize(stilling);
         File.WriteAllText(filnavn, json);
