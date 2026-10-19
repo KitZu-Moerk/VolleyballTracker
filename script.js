@@ -32,7 +32,13 @@ function fyldKoen() {
     const land = document.querySelector("#land").value;
     const niveau = document.querySelector("#niveau").value;
     const koen = [...new Set(ligaer.filter(l => l.Land === land && l.Niveau === niveau).map(l => l.Koen))];
+
+    const valgtKoen = document.querySelector("#koen").value;
     fyldMenu("koen", koen);
+    if (koen.includes(valgtKoen)) {
+        document.querySelector("#koen").value = valgtKoen;
+    }
+
     visValgtLiga();
 }
 
