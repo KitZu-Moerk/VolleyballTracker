@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="HentData.Tests/HentData.Tests.csproj" />
   <Project Path="HentData/HentData.csproj" />
 </Solution>
