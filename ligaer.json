@@ -1,0 +1,8 @@
+﻿[
+  { "Land": "Danmark", "Niveau": "Volleyligaen", "Koen": "Herrer", "LeagueId": 43334, "Fil": "dk-volleyligaen-herrer.json" },
+  { "Land": "Danmark", "Niveau": "Volleyligaen", "Koen": "Kvinder", "LeagueId": 44185, "Fil": "dk-volleyligaen-kvinder.json" },
+  { "Land": "Danmark", "Niveau": "1. Division Øst", "Koen": "Herrer", "LeagueId": 41632, "Fil": "dk-1div-oest-herrer.json" },
+  { "Land": "Danmark", "Niveau": "1. Division Øst", "Koen": "Kvinder", "LeagueId": 39930, "Fil": "dk-1div-oest-kvinder.json" },
+  { "Land": "Danmark", "Niveau": "1. Division Vest", "Koen": "Herrer", "LeagueId": 42483, "Fil": "dk-1div-vest-herrer.json" },
+  { "Land": "Danmark", "Niveau": "1. Division Vest", "Koen": "Kvinder", "LeagueId": 40781, "Fil": "dk-1div-vest-kvinder.json" }
+]

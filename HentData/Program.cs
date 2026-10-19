@@ -1,12 +1,20 @@
-﻿
-var mDKLiga = new StillingHenter(43334, 2026);
-var wDKLiga = new StillingHenter(44185, 2026);
+﻿using System.Text.Json;
 
-var mDKLigaStilling = await mDKLiga.HentStilling();
-var wDKLigaStilling = await wDKLiga.HentStilling();
+string tekst = File.ReadAllText("../../../../ligaer.json");
 
-mDKLiga.GemSomJson(mDKLigaStilling, "../../../../meand-season-resultat.json");
-wDKLiga.GemSomJson(wDKLigaStilling, "../../../../kvinder-season-resultat.json");
+var ligaer = JsonSerializer.Deserialize<List<Liga>>(tekst);
 
-
-
+foreach (var liga in ligaer)
+{
+    try
+    {
+        var henter = new StillingHenter(liga.LeagueId, 2025);
+        var stilling = await henter.HentStilling();
+        henter.GemSomJson(stilling, "../../../../" + liga.Fil);
+        Console.WriteLine("Gemt: " + liga.Fil);
+    }
+    catch (Exception fejl)
+    {
+        Console.WriteLine("Fejl ved " + liga.Fil + ": " + fejl.Message);
+    }
+}
