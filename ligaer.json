@@ -5,4 +5,8 @@
   { "Land": "Danmark", "Niveau": "1. Division Øst", "Koen": "Kvinder", "LeagueId": 39930, "Fil": "dk-1div-oest-kvinder.json" },
   { "Land": "Danmark", "Niveau": "1. Division Vest", "Koen": "Herrer", "LeagueId": 42483, "Fil": "dk-1div-vest-herrer.json" },
   { "Land": "Danmark", "Niveau": "1. Division Vest", "Koen": "Kvinder", "LeagueId": 40781, "Fil": "dk-1div-vest-kvinder.json" },
+  { "Land": "Polen", "Niveau":  "1. Liga", "Koen": "Herrer", "LeagueId": 101202, "Fil":  "pol-1liga-herrer.json"},
+  { "Land": "Polen", "Niveau":  "1. Liga", "Koen": "Kvinder", "LeagueId": 1102053, "Fil":  "pol-1liga-kvinder.json"},
+  { "Land": "Tyskland", "Niveau": "1. Bundesliga", "Koen":  "Herrer", "LeagueId": 56950, "Fil": "tysk-1liga-herrer.json"},
+  { "Land": "Tyskland", "Niveau": "1. Bundesliga", "Koen":  "Kvinder", "LeagueId": 57801, "Fil": "tysk-1liga-kvinder.json"}
 ]
