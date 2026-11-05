@@ -10,7 +10,7 @@
   { "Land": "Tyskland", "Niveau": "1. Bundesliga", "Koen":  "Herrer", "LeagueId": 56950, "Fil": "tysk-1liga-herrer.json"},
   { "Land": "Tyskland", "Niveau": "1. Bundesliga", "Koen":  "Kvinder", "LeagueId": 57801, "Fil": "tysk-1liga-kvinder.json"},
   { "Land": "Tyskland", "Niveau": "2. Bundesliga Nord", "Koen":  "Herrer", "LeagueId": 58652, "Fil": "tysk-2liga-nord-herrer.json"},
-  { "Land": "Tyskland", "Niveau": "2. Bundesliga Syd", "Koen":  "Herrer", "LeagueId": 59503, "Fil": "tysk-2liga-syd-herrer.json"},
+  { "Land": "Tyskland", "Niveau": "2. Bundesliga Syd", "Koen":  "Herrer", "LeagueId": 59503, "Fil": "tysk-2liga-syd-herrer.json","Gruppe": 1},
   { "Land": "Tyskland", "Niveau": "2. Bundesliga Nord", "Koen":  "Kvinder", "LeagueId": 61205, "Fil": "tysk-2liga-nord-kvinder.json"},
-  { "Land": "Tyskland", "Niveau": "2. Bundesliga Syd", "Koen":  "Kvinder", "LeagueId": 62056, "Fil": "tysk-2liga-syd-kvinder.json"}
+  { "Land": "Tyskland", "Niveau": "2. Bundesliga Syd", "Koen": "Kvinder", "LeagueId": 62056, "Fil": "tysk-2liga-syd-kvinder.json"}
 ]

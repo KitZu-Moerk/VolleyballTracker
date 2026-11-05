@@ -6,11 +6,13 @@ public class StillingHenter
     private readonly HttpClient client = new HttpClient();
     private readonly int leagueId;
     private readonly int season;
+    private readonly int gruppe;
 
-    public StillingHenter(int leagueId, int season)
+    public StillingHenter(int leagueId, int season, int gruppe = 0)
     {
         this.leagueId = leagueId;
         this.season = season;
+        this.gruppe = gruppe;
         var nøgle = Environment.GetEnvironmentVariable("HIGHLIGHTLY_KEY");
         client.DefaultRequestHeaders.Add("x-rapidapi-key", nøgle);
     }
@@ -27,7 +29,7 @@ public class StillingHenter
     {
         JsonDocument doc = JsonDocument.Parse(svar);
         
-        var holdListe = doc.RootElement.GetProperty("groups")[0].GetProperty("standings");
+        var holdListe = doc.RootElement.GetProperty("groups")[gruppe].GetProperty("standings");
         var stilling = new List<object>();
 
         foreach (var holdData in holdListe.EnumerateArray())

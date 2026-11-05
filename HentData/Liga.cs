@@ -1,1 +1,1 @@
-﻿public record Liga(string Land, string Niveau, string Koen, int LeagueId, string Fil);
+﻿public record Liga(string Land, string Niveau,int Gruppe, string Koen, int LeagueId, string Fil);
